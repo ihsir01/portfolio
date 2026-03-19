@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishi | Cybersecurity Professional</title>
+  <meta name="description" content="Rishi's cybersecurity portfolio — Blue Team analyst with hands-on penetration testing and vulnerability assessment experience." />
+  <meta property="og:title" content="Rishi | Cybersecurity Portfolio" />
+  <meta property="og:description" content="Blue Team Security Analyst | Penetration Tester | Vulnerability Assessment" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- ===== CANVAS BACKGROUND ===== -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <span class="brand-bracket">[</span>Rishi<span class="brand-bracket">]</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certs" class="nav-link">Certs</a></li>
+      <li><a href="#tools" class="nav-link">Tools</a></li>
+      <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-content reveal">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Rishi</h1>
+      <div class="hero-title-wrapper">
+        <span class="hero-typing" id="typing-text"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-tagline">Defending the digital frontier — and sometimes crossing it to find the gaps.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+        <a href="rishi_main_cv1.pdf" download="Rishi_Resume.pdf" class="btn btn-ghost" id="download-resume" aria-label="Download Resume">⬇ Resume</a>
+      </div>
+    </div>
+    <div class="hero-badge reveal">
+      <div class="status-ring">
+        <div class="status-dot"></div>
+        <span>Available for work</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section-header reveal">
+      <p class="section-label">// about me</p>
+      <h2>Who Is <span class="accent">Rishi</span>?</h2>
+    </div>
+    <div class="about-grid reveal">
+      <div class="about-photo-wrap">
+        <div class="about-photo-frame">
+          <img src="me.jpg" alt="Rishi - Cybersecurity Professional" class="about-photo" onerror="this.parentElement.innerHTML='<div class=\'about-photo-placeholder\'><span class=\'photo-icon\'>👤</span><p class=\'photo-hint\'>Add your photo as me.jpg</p></div>'" />
+        </div>
+      </div>
+      <div class="about-text">
+        <p>I'm <strong>Rishi</strong>, a cybersecurity professional with a strong foundation in <span class="accent">blue team operations</span> — from threat hunting and incident response to SIEM engineering and log analysis.</p>
+        <p>On the offensive side, I've conducted <strong>4 penetration tests</strong> and <strong>4 vulnerability assessments</strong>, delivering actionable reports that help organizations patch critical gaps before the bad guys exploit them.</p>
+        <p>My approach is holistic: I think like a defender, but hunt like an attacker. This dual mindset helps me build more resilient security postures.</p>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">Pen Tests</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">VA Reports</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="50">0</span><span class="stat-num-plus">+</span>
+            <span class="stat-label">Incidents Handled</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num" data-count="2">0</span><span class="stat-num-plus">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <p class="section-label">// expertise</p>
+      <h2>Skills &amp; <span class="accent">Expertise</span></h2>
+    </div>
+    <div class="skills-grid">
+      <!-- BLUE TEAM -->
+      <div class="skill-column reveal">
+        <div class="skill-column-header blue">
+          <span class="col-icon">🛡️</span>
+          <h3>Blue Team</h3>
+          <span class="col-tag">Defensive Security</span>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info"><span>SIEM &amp; Log Analysis</span><span class="skill-tag">Splunk / ELK</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Incident Response</span><span class="skill-tag">IR / Forensics</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Threat Hunting</span><span class="skill-tag">MITRE ATT&amp;CK</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Network Security Monitoring</span><span class="skill-tag">Wireshark / Zeek</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>EDR &amp; Endpoint Security</span><span class="skill-tag">CrowdStrike / Defender</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Security Automation</span><span class="skill-tag">SOAR / Python</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RED TEAM -->
+      <div class="skill-column reveal">
+        <div class="skill-column-header red">
+          <span class="col-icon">⚔️</span>
+          <h3>Red Team</h3>
+          <span class="col-tag">Offensive Security</span>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-info"><span>Web Penetration Testing</span><span class="skill-tag">OWASP / Burp Suite</span></div>
+            <div class="skill-bar"><div class="skill-fill red-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Network Pen Testing</span><span class="skill-tag">Nmap / Metasploit</span></div>
+            <div class="skill-bar"><div class="skill-fill red-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Vulnerability Assessment</span><span class="skill-tag">Nessus / OpenVAS</span></div>
+            <div class="skill-bar"><div class="skill-fill red-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Active Directory Attacks</span><span class="skill-tag">BloodHound / Impacket</span></div>
+            <div class="skill-bar"><div class="skill-fill red-fill" data-width="60"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Social Engineering</span><span class="skill-tag">Phishing / OSINT</span></div>
+            <div class="skill-bar"><div class="skill-fill red-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info"><span>Report Writing</span><span class="skill-tag">Executive &amp; Technical</span></div>
+            <div class="skill-bar"><div class="skill-fill red-fill" data-width="85"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services">
+    <div class="section-header reveal">
+      <p class="section-label">// what i do</p>
+      <h2>My <span class="accent">Services</span></h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">🔍</div>
+        <h3>Threat Hunting</h3>
+        <p>Proactively hunt for threats hiding in your environment using MITRE ATT&amp;CK-aligned playbooks and behavior-based analytics.</p>
+        <div class="service-tags"><span>SIEM</span><span>Splunk</span><span>ELK</span></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🚨</div>
+        <h3>Incident Response</h3>
+        <p>Rapid triage, containment, eradication, and recovery from security incidents with detailed post-incident reports.</p>
+        <div class="service-tags"><span>Forensics</span><span>DFIR</span><span>Playbooks</span></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🎯</div>
+        <h3>Penetration Testing</h3>
+        <p>Simulated attacks on web apps, networks, and Active Directory environments to uncover exploitable vulnerabilities.</p>
+        <div class="service-tags"><span>Burp Suite</span><span>Metasploit</span><span>Nmap</span></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🔬</div>
+        <h3>Vulnerability Assessment</h3>
+        <p>Comprehensive scan-and-analyze cycles using enterprise tools, delivering prioritized remediation roadmaps.</p>
+        <div class="service-tags"><span>Nessus</span><span>OpenVAS</span><span>CVSS</span></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📋</div>
+        <h3>Security Audits</h3>
+        <p>Review of security controls, policies, and configurations against frameworks like CIS, NIST, and ISO 27001.</p>
+        <div class="service-tags"><span>NIST</span><span>CIS</span><span>ISO 27001</span></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🎓</div>
+        <h3>Security Training</h3>
+        <p>Security awareness sessions and phishing simulations to build a human firewall within your organization.</p>
+        <div class="service-tags"><span>Phishing Sim</span><span>Workshops</span><span>OSINT</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <p class="section-label">// case studies</p>
+      <h2>My <span class="accent">Projects</span></h2>
+    </div>
+
+    <div class="project-filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <!-- PROJECT 1: SmartFirewall -->
+      <div class="project-card reveal" data-category="blue">
+        <div class="project-header">
+          <span class="project-badge blue-badge">Blue Team</span>
+          <span class="project-status">Completed</span>
+        </div>
+        <h3>Smart Firewall</h3>
+        <p>A Java-based application-level smart firewall that inspects incoming HTTP requests using IP reputation checks, rate limiting, and regex-based attack detection (SQLi/XSS). Includes a real-time web dashboard displaying firewall decisions and logs.</p>
+        <div class="project-tags">
+          <span>Java</span><span>HTTP Inspection</span><span>SQLi/XSS Detection</span><span>Rate Limiting</span><span>Dashboard</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ihsir01/SmartFirewall" target="_blank" rel="noopener" class="proj-link">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 2: Navjeevan HMS -->
+      <div class="project-card reveal" data-category="blue">
+        <div class="project-header">
+          <span class="project-badge blue-badge">Web App</span>
+          <span class="project-status">Completed</span>
+        </div>
+        <h3>Navjeevan — HMS</h3>
+        <p>A web-based Hospital Management System built using Django that streamlines hospital operations by managing patients, doctors, and inventory in one centralized platform.</p>
+        <div class="project-tags">
+          <span>Django</span><span>Python</span><span>Web App</span><span>Database</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ihsir01/Navjeevan" target="_blank" rel="noopener" class="proj-link">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 3: Secure Notes Vault -->
+      <div class="project-card reveal" data-category="blue">
+        <div class="project-header">
+          <span class="project-badge blue-badge">Security Tool</span>
+          <span class="project-status">Completed</span>
+        </div>
+        <h3>Secure Notes Vault</h3>
+        <p>A secure notes application with encryption-backed storage, allowing users to safely store and manage sensitive information with strong access controls and data protection.</p>
+        <div class="project-tags">
+          <span>Encryption</span><span>Secure Storage</span><span>Access Control</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ihsir01/Notes-vault" target="_blank" rel="noopener" class="proj-link">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 4: Animal Adoption Website -->
+      <div class="project-card reveal" data-category="blue">
+        <div class="project-header">
+          <span class="project-badge blue-badge">Web App</span>
+          <span class="project-status">Completed</span>
+        </div>
+        <h3>Animal Adoption Website</h3>
+        <p>A website for adoption of pet animals where you can adopt dogs, cats, and many other animals. A full-stack web application connecting adopters with rescue animals.</p>
+        <div class="project-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Web Design</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/ihsir01/website" target="_blank" rel="noopener" class="proj-link">GitHub →</a>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
+
+    <!-- ADD PROJECT BUTTON -->
+    <div class="add-project-wrap reveal">
+      <p class="add-hint">// More projects coming soon — I update this as I complete new engagements.</p>
+      <button class="btn btn-outline add-project-btn" id="add-project-btn">+ Add New Project</button>
+    </div>
+
+    <!-- ADD PROJECT MODAL -->
+    <div class="modal-overlay" id="add-modal">
+      <div class="modal-box">
+        <button class="modal-close" id="modal-close">✕</button>
+        <h3>Add New Project</h3>
+        <p class="modal-hint">Fill in the details below and click <em>Add Card</em> to append it to your portfolio. (Refreshing the page will reset it — save the generated HTML if you want it permanent.)</p>
+        <div class="form-group">
+          <label for="proj-title">Project Title *</label>
+          <input type="text" id="proj-title" placeholder="e.g. Web App Pen Test #5" />
+        </div>
+        <div class="form-group">
+          <label for="proj-cat">Category *</label>
+          <select id="proj-cat">
+            <option value="blue">🛡️ Blue Team</option>
+            <option value="red">⚔️ Red Team</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="proj-desc">Description *</label>
+          <textarea id="proj-desc" rows="3" placeholder="Brief description of the project..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="proj-tags">Tools / Tags (comma-separated)</label>
+          <input type="text" id="proj-tags" placeholder="e.g. Burp Suite, Nmap, Nessus" />
+        </div>
+        <div class="form-group">
+          <label for="proj-link">Link (optional)</label>
+          <input type="text" id="proj-link" placeholder="https://github.com/..." />
+        </div>
+        <button class="btn btn-primary" id="modal-submit">Add Card</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certs">
+    <div class="section-header reveal">
+      <p class="section-label">// credentials</p>
+      <h2>Certifications &amp; <span class="accent">Education</span></h2>
+    </div>
+    <div class="certs-grid reveal">
+      <div class="cert-card">
+        <div class="cert-icon">🏅</div>
+        <div class="cert-body">
+          <h4>Jr Penetration Tester</h4>
+          <p>TryHackMe · Completed</p>
+          <span class="cert-level mid">Pen Testing</span>
+        </div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon">🏅</div>
+        <div class="cert-body">
+          <h4>SOC Level 1</h4>
+          <p>TryHackMe · Completed</p>
+          <span class="cert-level blue-cert">Blue Team</span>
+        </div>
+      </div>
+      <div class="cert-card add-cert-card" id="add-cert-btn">
+        <div class="cert-icon">➕</div>
+        <div class="cert-body">
+          <h4>Add Certification</h4>
+          <p>Click to add a new cert</p>
+          <span class="cert-level ghost">—</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADD CERT MODAL -->
+    <div class="modal-overlay" id="add-cert-modal">
+      <div class="modal-box">
+        <button class="modal-close" id="cert-modal-close">✕</button>
+        <h3>Add Certification</h3>
+        <div class="form-group">
+          <label for="cert-name">Certification Name *</label>
+          <input type="text" id="cert-name" placeholder="e.g. OSCP" />
+        </div>
+        <div class="form-group">
+          <label for="cert-provider">Provider</label>
+          <input type="text" id="cert-provider" placeholder="e.g. Offensive Security" />
+        </div>
+        <div class="form-group">
+          <label for="cert-level-sel">Level</label>
+          <select id="cert-level-sel">
+            <option value="beginner">Foundational</option>
+            <option value="mid">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" id="cert-modal-submit">Add Cert</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOOLS ===== -->
+  <section id="tools">
+    <div class="section-header reveal">
+      <p class="section-label">// arsenal</p>
+      <h2>Tools &amp; <span class="accent">Technologies</span></h2>
+    </div>
+    <div class="tools-grid reveal">
+      <div class="tool-chip">🔴 Splunk</div>
+      <div class="tool-chip">📊 ELK Stack</div>
+      <div class="tool-chip">🔬 Wireshark</div>
+      <div class="tool-chip">🗺️ Nmap</div>
+      <div class="tool-chip">🎯 Burp Suite</div>
+      <div class="tool-chip">💥 Metasploit</div>
+      <div class="tool-chip">🔎 Nessus</div>
+      <div class="tool-chip">🟢 OpenVAS</div>
+      <div class="tool-chip">🩸 BloodHound</div>
+      <div class="tool-chip">🔏 Impacket</div>
+      <div class="tool-chip">🐍 Python</div>
+      <div class="tool-chip">🖥️ PowerShell</div>
+      <div class="tool-chip">🐧 Linux / Kali</div>
+      <div class="tool-chip">🗂️ MITRE ATT&amp;CK</div>
+      <div class="tool-chip">⚡ Volatility</div>
+      <div class="tool-chip">🔐 CyberChef</div>
+      <div class="tool-chip">☁️ AWS Security</div>
+      <div class="tool-chip">🐙 GitHub</div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <p class="section-label">// get in touch</p>
+      <h2>Contact <span class="accent">Rishi</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p>Have a security challenge, a project in mind, or just want to connect? Drop me a message — I'm always open to new opportunities and conversations.</p>
+        <div class="contact-links">
+          <a href="mailto:rishiraj82529@gmail.com" class="contact-link" id="email-link">
+            <span class="contact-icon">📧</span>
+            <div><strong>Email</strong><span>rishiraj82529@gmail.com</span></div>
+          </a>
+          <a href="https://www.linkedin.com/in/raj-rishi/" target="_blank" rel="noopener" class="contact-link" id="linkedin-link">
+            <span class="contact-icon">💼</span>
+            <div><strong>LinkedIn</strong><span>/in/raj-rishi</span></div>
+          </a>
+          <a href="https://github.com/ihsir01" target="_blank" rel="noopener" class="contact-link" id="github-link">
+            <span class="contact-icon">💻</span>
+            <div><strong>GitHub</strong><span>github.com/ihsir01</span></div>
+          </a>
+          <a href="https://tryhackme.com/p/risiyadav01" target="_blank" rel="noopener" class="contact-link" id="thm-link">
+            <span class="contact-icon">🚩</span>
+            <div><strong>TryHackMe</strong><span>tryhackme.com/p/risiyadav01</span></div>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contact-form">
+        <div class="form-group">
+          <label for="form-name">Name</label>
+          <input type="text" id="form-name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="form-email">Email</label>
+          <input type="email" id="form-email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="form-subject">Subject</label>
+          <input type="text" id="form-subject" placeholder="e.g. Pen Test Inquiry" />
+        </div>
+        <div class="form-group">
+          <label for="form-message">Message</label>
+          <textarea id="form-message" rows="5" placeholder="Tell me about your project or question..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="form-submit">Send Message 🚀</button>
+        <p class="form-note" id="form-note"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <p class="footer-brand"><span class="brand-bracket">[</span>Rishi<span class="brand-bracket">]</span></p>
+      <p class="footer-copy">© <span id="year"></span> Rishi · Blue Team Security Analyst · Pen Tester</p>
+      <p class="footer-quote">"The best defense is knowing the offense."</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
